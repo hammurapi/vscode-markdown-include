@@ -1,0 +1,38 @@
+{
+  "name": "markdown-include",
+  "version": "0.0.1",
+  "displayName": "Markdown Include",
+  "description": "Adds include syntax support to VS Code's built-in markdown preview",
+  "keywords": [
+    "include",
+    "markdown",
+    "github",
+    "multi-root ready"
+  ],
+  "icon": "logo/logox128.png",
+  "publisher": "bierner",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/hammurapi/vscode-markdown-include.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hammurapi/vscode-markdown-include/issues"
+  },
+  "engines": {
+    "vscode": "^1.33.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "contributes": {
+    "markdown.markdownItPlugins": true
+  },
+  "main": "./extension.js",
+  "devDependencies": {
+    "@types/vscode": "^1.33.0"
+  },
+  "dependencies": {
+    "markdown-it-include": "^2.0.0"
+  }
+}
