@@ -10,6 +10,7 @@ function activate(context) {
             return md.use(require('markdown-it-include'), {
                 root: vscode.workspace.rootPath,
                 includeRe: new RegExp( config.get('includeRe') ),
+                throwError: false,
               } );
         }
     };
