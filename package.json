@@ -1,7 +1,7 @@
 {
   "name": "markdown-include",
   "version": "0.0.1",
-  "displayName": "Markdown Include",
+  "displayName": "Markdown Include Extension",
   "description": "Adds include syntax support to VS Code's built-in markdown preview",
   "keywords": [
     "include",
