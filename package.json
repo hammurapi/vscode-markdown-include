@@ -10,7 +10,7 @@
     "multi-root ready"
   ],
   "icon": "logo/logox128.png",
-  "publisher": "bierner",
+  "publisher": "hammurapi",
   "license": "MIT",
   "repository": {
     "url": "https://github.com/hammurapi/vscode-markdown-include.git"
@@ -26,7 +26,17 @@
   ],
   "activationEvents": [],
   "contributes": {
-    "markdown.markdownItPlugins": true
+    "markdown.markdownItPlugins": true,
+    "configuration": {
+      "title": "Markdown Include Options",
+      "properties": {
+        "markdown-include.includeRe": {
+          "type": "string",
+          "description": "This option allows to customize the regular expression statement which is used to include markdown fragment files.",
+          "default": "\\$include(.+)"
+        }
+      }
+    }
   },
   "main": "./extension.js",
   "devDependencies": {

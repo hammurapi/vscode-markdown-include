@@ -9,7 +9,12 @@
             "runtimeExecutable": "${execPath}",
             "args": ["--extensionDevelopmentPath=${workspaceRoot}" ],
             "stopOnEntry": false,
-            "sourceMaps": true
+            "sourceMaps": true,
+            "resolveSourceMapLocations": [
+                "${workspaceFolder}/**",
+                "!**/node_modules/**",
+                "**/node_modules/markdown-it-include/**/*.js"
+            ]
         }
     ]
 }
